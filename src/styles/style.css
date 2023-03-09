@@ -67,35 +67,6 @@
     font-size: 1.8rem;
 }
 
-.info-img a{
-    font-size: 3rem;
-    width: fit-content;
-    font-weight: bold;
-    transition: ease-in-out .2s;
-    border-bottom: 3px solid transparent;
-}
-
-.info-img a:hover{
-    transition: ease-in-out .2s;
-    border-color: currentColor;
-}
-
-.info-img #saiba-mais-img1{
-    color: var(--cor-painel1);
-}
-
-.info-img #saiba-mais-img2{
-    color: var(--cor-painel2);
-}
-
-.info-img #saiba-mais-img3{
-    color: var(--cor-painel3);
-}
-
-.info-img #saiba-mais-img4{
-    color: var(--cor-painel4);
-}
-
 .seta{
     position: absolute;
     width: 100px;
@@ -124,7 +95,3 @@
 .seta.btn-avancar{
     right: 3.8rem;
 }
-
-
-
-
