@@ -1,0 +1,44 @@
+@import url(variables.css);
+
+html{
+    font-family: var(--fonte-principal);
+    font-size: 62.5%;
+}
+
+/* .paisagem:nth-of-type(n+2){
+    display: none;
+} */
+
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+img, h2, p{
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;
+    -khtml-user-select: none;     
+    -moz-user-select: none;       
+    -ms-user-select: none;        
+    user-select: none;            
+}
+
+@keyframes opacity01 {
+    from {
+        filter: brightness(60%);
+    }
+    to {
+        filter: brightness(100%);
+    }
+}
+
+@keyframes info-emerge {
+    from {
+        margin-bottom: -200px;
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+    }
+}

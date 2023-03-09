@@ -1,0 +1,130 @@
+@import 'abstract/reset.css';
+@import 'abstract/global.css';
+
+.container-principal{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.paisagem{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.paisagem.mostrar{
+    animation-name: opacity01;
+    animation-duration: 4s;
+    z-index: 0;
+}
+
+.paisagem.fundo1{
+    background-image: url(../images/1.png);
+}
+
+.paisagem.fundo2{
+    background-image: url(../images/2.png);
+}
+
+.paisagem.fundo3{
+    background-image: url(../images/3.png);
+}
+
+.info-img{
+    background-color: rgba(251, 250, 250, 0.196); /* cor de fundo transparente */
+    backdrop-filter: blur(10px); /* efeito de desfoque */
+    width: 70vw;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 40px;
+    
+}
+
+.info-img.surgir{
+    animation-name: info-emerge;
+    animation-duration: 1.5s;
+}
+
+.info-img h2{
+    font-size: 2.8rem;    
+}
+
+.info-img p{
+    font-size: 1.8rem;
+}
+
+.info-img a{
+    font-size: 3rem;
+    width: fit-content;
+    font-weight: bold;
+    transition: ease-in-out .2s;
+    border-bottom: 3px solid transparent;
+}
+
+.info-img a:hover{
+    transition: ease-in-out .2s;
+    border-color: currentColor;
+}
+
+.info-img #saiba-mais-img1{
+    color: var(--cor-painel1);
+}
+
+.info-img #saiba-mais-img2{
+    color: var(--cor-painel2);
+}
+
+.info-img #saiba-mais-img3{
+    color: var(--cor-painel3);
+}
+
+.info-img #saiba-mais-img4{
+    color: var(--cor-painel4);
+}
+
+.seta{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/seta.png);
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.seta:active{
+    opacity: .3;
+}
+
+.seta.fim{
+    filter: brightness(55%);
+}
+
+.seta.btn-voltar{
+    left: 3.8rem;
+    transform: rotateY(180deg);
+}
+
+.seta.btn-avancar{
+    right: 3.8rem;
+}
+
+
+
+
